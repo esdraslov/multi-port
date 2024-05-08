@@ -61,4 +61,15 @@ namespace MultiPort {
             return sonar.ping(trigger, echo, unit)
         }
     }
+    /**
+     * read the digital pin, can check anything which is connected to the pin
+     * 
+     * @param pin the pin to be read
+     */
+    //% block="read digital pin %pin"
+    //% blockAliasFor="pins.digitalReadPin"
+    //% group="other"
+    export function readDigital(pin: DigitalPin) {
+        return pins.digitalReadPin(pin)
+    }
 }
