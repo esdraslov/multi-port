@@ -1,24 +1,27 @@
+# Multi-port
 
-> Abrir essa página em [https://esdraslov.github.io/multi-port/](https://esdraslov.github.io/multi-port/)
+Support (almost) any component with only 1 micro:bit
 
-## Usar como extensão
+## method buzzer.TurnBuzzer (pin, on)
 
-Este repositório pode ser adicionado como **extensão** no MakeCode.
+set the state of a buzzer
 
-* abrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* clique em **Novo Projeto**
-* clique em **Extensões** em baixo do menu com ícone de engrenagem
-* procure por **https://github.com/esdraslov/multi-port** e importe
+## method buzzer.Hz (note)
 
-## Editar este projeto
+play the note in the buzzer
 
-Para editar este repositório no MakeCode.
+## method photoresistor.read (pin)
 
-* abrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* clique em **Importar** e depois clique em **Importar URL**
-* cole **https://github.com/esdraslov/multi-port** e clique em importar
+read a photoresistor, returns the light
 
-#### Metadados (usados para pesquisa, renderização)
+## method DistanceSensor.checkDistance (trigger, echo, unit)
 
+check the distance of a object using a distance sensor
+
+## method readDigital (pin)
+
+read the digital pin
+
+> metadata; for searchs
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
