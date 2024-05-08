@@ -1,4 +1,4 @@
-//% icon="\uf287"
+//% icon="\uf287" color="#FE6423" weight=300 block="Multi Port"
 //% groups=["buzzer"]
 namespace MultiPort {
     //% group="buzzer"
