@@ -14,6 +14,7 @@ namespace MultiPort {
          */
         //% block="set state of buzzer (piezo) in pin %pin to %on"
         //% group="Buzzer"
+        //% on.shadow="toggleOnOff"
         export function TurnBuzzer(pin: DigitalPin, on: boolean) {
             if (on) {
                 pins.digitalWritePin(pin, 1)
