@@ -2,11 +2,11 @@
 
 Support (almost) any component with only 1 micro:bit
 
-## method buzzer.TurnBuzzer (pin, on)
+## method buzzer.turnBuzzer (pin, on)
 
 set the state of a buzzer
 
-## method buzzer.Hz (note)
+## method buzzer.hz (note)
 
 play the note in the buzzer
 
