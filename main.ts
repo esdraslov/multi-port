@@ -1,3 +1,4 @@
+//% icon="\uf287"
 //% groups=["buzzer"]
 namespace MultiPort {
     //% group="buzzer"
