@@ -1,5 +1,5 @@
 //% icon="\uf287" color="#FE6423" weight=300 block="Multi Port"
-//% groups=["Buzzer", "Rotating system", "Light system", "Arduino"]
+//% groups=["Buzzer", "Rotating system", "Light system", "Arduino", "other"]
 namespace MultiPort {
     //% group="Buzzer"
     export namespace buzzer {
@@ -24,6 +24,13 @@ namespace MultiPort {
         //% group="Light system"
         export function read(pin: AnalogPin) {
             return pins.analogReadPin(pin)
+        }
+    }
+    //% group="Arduino"
+    export namespace DistanceSensor {
+        //% block="check distance of a object using pins trig %trigger and echo %echo, result in %unit"
+        export function checkDistance(trigger: DigitalPin, echo: DigitalPin, unit: PingUnit) {
+            return sonar.ping(DigitalPin.P0, DigitalPin.P0, PingUnit.Centimeters)
         }
     }
 }
