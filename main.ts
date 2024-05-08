@@ -1,7 +1,10 @@
+//% groups=["buzzer"]
 namespace MultiPort {
+    //% group="buzzer"
     export namespace buzzer {
         //% block="set state of buzzer (piezo) in pin %pin to %on"
-        export function TurnBuzzer(on: boolean, pin: DigitalPin) {
+        //% group="buzzer"
+        export function TurnBuzzer(pin: DigitalPin, on: boolean) {
             if (on) {
                 pins.digitalWritePin(pin, 1)
             } else {
@@ -9,6 +12,7 @@ namespace MultiPort {
             }
         }
         //% block="buzzer in note %note"
+        //% group="buzzer"
         export function Hz(note: Note) {
             music.tonePlayable(Note.C, music.beat(BeatFraction.Whole))
         }
