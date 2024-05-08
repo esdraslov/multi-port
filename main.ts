@@ -13,7 +13,7 @@ namespace MultiPort {
             }
         }
         //% block="buzzer in note %note"
-        //% group="buzzer"
+        //% group="Buzzer"
         export function Hz(note: Note) {
             music.tonePlayable(Note.C, music.beat(BeatFraction.Whole))
         }
